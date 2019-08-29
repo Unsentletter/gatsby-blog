@@ -1,16 +1,18 @@
 import React from 'react';
 import Layout from '../components/layout';
 
+import styles from './styles/about.module.css';
+
 class About extends React.Component {
   render() {
     return (
       <div>
         <Layout>
-          <div className="body">
-            <div className="left">
+          <div className={styles.body}>
+            <div className={styles.left}>
               <img src="static/me.png" alt="This is me" />
             </div>
-            <div className="right">
+            <div className={styles.right}>
               As you can probably tell by the url that brought you here my name
               is Tristan Southwell. What you probably can’t tell from that url
               is that I am a software developer, an aquarium enthusiast, an
@@ -31,6 +33,10 @@ class About extends React.Component {
               much for my own learning as well as anyone who happens upon this
               page. I love to learn and I love to teach, so this is me just
               living the dream.
+              <br />
+              <br />
+              This page is very much a work in progress and I will be updating
+              it as I have enough spare time to spend on it.
             </div>
           </div>
         </Layout>

@@ -1,7 +1,8 @@
 import React from 'react';
 
 import Layout from '../components/layout';
-import MainBody from '../components/main-body';
+
+import styles from './styles/index.module.css';
 
 export default class App extends React.Component {
   render() {
@@ -9,7 +10,16 @@ export default class App extends React.Component {
       <div>
         {/* Bit of SEO here when I work out how it works*/}
         <Layout>
-          <MainBody />
+          <div className={styles.body}>
+            <div className={styles.textWrapper}>
+              <h1 className={styles.mainHeader}>
+                I like to write code and play with fish tanks
+              </h1>
+              <h4 className={styles.subHeader}>
+                This is a blog where I can write about both
+              </h4>
+            </div>
+          </div>
         </Layout>
       </div>
     );

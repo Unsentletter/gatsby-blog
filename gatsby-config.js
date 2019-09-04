@@ -12,8 +12,15 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/content/blog`,
-        name: `blog`,
+        path: `${__dirname}/content/techBlog`,
+        name: `techBlog`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/content/aquariumBlog`,
+        name: `aquariumBlog`,
       },
     },
     {
@@ -75,4 +82,4 @@ module.exports = {
       },
     },
   ],
-}
+};
